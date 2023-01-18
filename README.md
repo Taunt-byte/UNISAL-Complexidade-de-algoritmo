@@ -89,3 +89,14 @@ A lista de adjacência pode ser implementada como um array de ponteiros para vé
 Para adicionar uma aresta entre dois vértices, basta adicionar o vértice destino na lista de adjacência do vértice de origem.
 
 Assim como em Python, é possível implementar diversas outras operações em um grafo em C, como busca em largura ou profundidade, cálculo do menor caminho entre dois vértices, etc. 
+
+# O algoritmo de Karatsuba
+
+O algoritmo de Karatsuba é uma forma eficiente de multiplicar números grandes, utilizando a técnica de divisão e conquista. Ele divide cada número em dois pedaços e usa essas partes para calcular o resultado da multiplicação através de três multiplicações de números menores e algumas operações de soma e subtração.
+
+A implementação tradicional do algoritmo de Karatsuba faz uso de recursão para dividir os números em partes menores até que eles possam ser multiplicados diretamente. O exemplo que eu passei anteriormente mostra uma implementação recursiva do algoritmo de Karatsuba para multiplicar dois números grandes representados como strings. Ele utiliza a função recursiva karatsuba() para dividir os números em partes menores e as funções add() e subtract() para somar e subtrair as partes, respectivamente.
+
+Ao dividir os números em duas metades ele utiliza as partes para calcular recursivamente a,b,c e d e logo após realizar 3 multiplicações recursivas com a, b, c e d. Depois soma e subtrai esses resultados para obter o resultado final.
+
+É importante notar que essa implementação pode ter problemas com overflow, se você estiver trabalhando com números realmente grandes, e é necessário usar bibliotecas específicas para lidar com números grandes e evitar esses problemas.
+

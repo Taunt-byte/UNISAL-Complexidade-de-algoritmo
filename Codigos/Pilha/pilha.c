@@ -1,3 +1,8 @@
+/*
+Lucas Neves da Silva
+24/09/2022
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
